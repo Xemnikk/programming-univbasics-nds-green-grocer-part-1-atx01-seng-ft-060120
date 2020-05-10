@@ -8,9 +8,8 @@ def find_item_by_name_in_collection(name, collection)
   #collection = grocery_shelf
   collection.each do |array, hashes_value|
     hashes_value[:item] = item_name 
-    if item_name = name
-      hashes_value 
-      new_hash << 
+    if item_name == name
+      new_hash << item_name
     else
       return nil
     end 
