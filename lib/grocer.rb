@@ -9,6 +9,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |array|
     if array[:item] == name 
       found_item = array
+      return found_item
     else
       return found_item
     end 
