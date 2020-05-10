@@ -7,8 +7,11 @@ def find_item_by_name_in_collection(name, collection)
   #name = grocery_shelf[array][hashes_value][0]
   #collection = grocery_shelf
   collection.each do |array, hashes_value|
-    hashes_value[:item] = name
-  
+    hashes_value[:item] = item_name 
+    if item_name = name
+      new_hash << name
+    end 
+  end 
 end
 
 def consolidate_cart(cart)
