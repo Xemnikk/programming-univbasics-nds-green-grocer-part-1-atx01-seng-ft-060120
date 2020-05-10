@@ -2,7 +2,13 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
-
+  
+  new_hash = {}
+  #name = grocery_shelf[array][hashes_value][0]
+  #collection = grocery_shelf
+  collection.each do |array, hashes_value|
+    hashes_value[0] = name
+  
 end
 
 def consolidate_cart(cart)
