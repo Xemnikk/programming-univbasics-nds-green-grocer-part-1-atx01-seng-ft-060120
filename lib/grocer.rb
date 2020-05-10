@@ -23,7 +23,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
   reciept = []
-  cart.each do |array|
+  cart.each do ||
     array[:count] = array[]
   
 
