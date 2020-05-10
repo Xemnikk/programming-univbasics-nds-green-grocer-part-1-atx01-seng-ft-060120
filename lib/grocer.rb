@@ -3,15 +3,14 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  new_hash = {}
+  found_item = nil
   #name = grocery_shelf[array][hashes_value][0]
   #collection = grocery_shelf
-  collection.each do |array, hashes_value|
-    hashes_value[:item] = item_name 
-    if item_name == name
-      new_hash << item_name
+  collection.each do |array|
+    if array[:item] == name 
+      found_item = name
     else
-      return nil
+      found_item
     end 
   end 
 end
