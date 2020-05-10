@@ -13,7 +13,6 @@ def find_item_by_name_in_collection(name, collection)
       return found_item
     end 
   end 
-  return found_item
 end
 
 def consolidate_cart(cart)
