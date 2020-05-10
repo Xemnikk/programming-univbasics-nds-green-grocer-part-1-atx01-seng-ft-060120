@@ -10,9 +10,10 @@ def find_item_by_name_in_collection(name, collection)
     if array[:item] == name 
       found_item = array
     else
-      return found_item
+      found_item
     end 
   end 
+  return found_item
 end
 
 def consolidate_cart(cart)
