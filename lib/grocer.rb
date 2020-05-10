@@ -10,7 +10,7 @@ def find_item_by_name_in_collection(name, collection)
     if array[:item] == name 
       found_item = array
     else
-      return 
+      return found_item
     end 
   end 
 end
