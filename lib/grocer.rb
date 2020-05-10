@@ -11,6 +11,8 @@ def find_item_by_name_in_collection(name, collection)
     if item_name = name
       
       new_hash << hashes_value
+    else
+      return nil
     end 
   end 
 end
