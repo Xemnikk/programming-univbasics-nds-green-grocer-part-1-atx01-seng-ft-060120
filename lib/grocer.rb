@@ -8,9 +8,9 @@ def find_item_by_name_in_collection(name, collection)
   #collection = grocery_shelf
   collection.each do |array|
     if array[:item] == name 
-      found_item = name
+      found_item = array
     else
-      found_item
+      return found_item
     end 
   end 
 end
