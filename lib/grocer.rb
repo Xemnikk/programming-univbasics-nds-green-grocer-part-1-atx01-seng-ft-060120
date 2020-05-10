@@ -25,7 +25,19 @@ def consolidate_cart(cart)
   reciept = []
   cart.each do |item|
     current_item = find_item_by_name_in_collection(item[:item], new_cart)
-    
+    if current_item
+      reciept.each do |reciept_item|
+        if reciept_item[:item] == current_item[:item]
+          reciept_item[:count] += 1 
+        end
+      end
+    else
+      item[:count] = 1 
+      reciept << item
+    end
+  end
+  reciept
+ end
   
 
 end
