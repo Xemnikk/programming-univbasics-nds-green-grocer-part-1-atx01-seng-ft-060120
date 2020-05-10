@@ -9,8 +9,8 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |array, hashes_value|
     hashes_value[:item] = item_name 
     if item_name = name
-      
-      new_hash << hashes_value
+      hashes_value 
+      new_hash << 
     else
       return nil
     end 
