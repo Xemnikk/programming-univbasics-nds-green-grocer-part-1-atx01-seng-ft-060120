@@ -3,7 +3,7 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  found_item = nil
+  found_item = not nil
   #name = grocery_shelf[array][hashes_value][0]
   #collection = grocery_shelf
   collection.each do |array|
