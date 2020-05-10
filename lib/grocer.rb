@@ -7,9 +7,8 @@ def find_item_by_name_in_collection(name, collection)
   #name = grocery_shelf[array][hashes_value][0]
   #collection = grocery_shelf
   collection.each do |array|
-    return array if array[:item] == name 
-      
-      
+    if array[:item] == name 
+      return array 
     else
       return found_item
     end 
